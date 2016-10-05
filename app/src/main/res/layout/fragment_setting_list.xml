@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chenji.lock.view.setting.SettingFragmentList"
+    >
+
+    <RelativeLayout
+        android:id="@+id/set_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_background"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/item_big_4"
+            android:layout_height="@dimen/item_big_2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_forward"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_password" />
+
+        <ImageView
+            android:layout_width="@dimen/item_big_4"
+            android:layout_height="@dimen/item_big_2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_forward"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:id="@+id/set_lock_after_exit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/lock_after_exit_tip"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/text_gray"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/set_lock_after_exit_text"
+            android:text="@string/lock_after_exit"
+            />
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/set_lock_after_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textOn="on"
+            android:textOff="off"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:id="@+id/set_boot_completed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/boot_completed_tip"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/text_gray"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/set_boot_completed_text"
+            android:text="@string/boot_completed"
+            />
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/set_boot_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textOn="on"
+            android:textOff="off"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_update"
+            />
+
+        <TextView
+            android:id="@+id/set_update_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/set_update"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/item_big_6"
+            android:layout_height="@dimen/item_big_6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_hava_dialog"
+            />
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout
+        android:id="@+id/set_language"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_language"
+            />
+
+        <TextView
+            android:id="@+id/set_language_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/set_language"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/item_big_6"
+            android:layout_height="@dimen/item_big_6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_hava_dialog"
+            />
+
+    </RelativeLayout>-->
+
+
+
+</LinearLayout>

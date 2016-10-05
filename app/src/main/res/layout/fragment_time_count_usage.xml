@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chenji.lock.view.count.TimeCountFragmentUsage"
+    android:paddingTop="@dimen/item_padding">
+
+    <ImageView
+        android:id="@+id/count_usage_icon"
+        android:layout_width="@dimen/item_small"
+        android:layout_height="@dimen/item_small"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/item_small"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/count_usage_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/item_big_2"
+        android:layout_below="@+id/count_usage_icon"
+        />
+
+</RelativeLayout>

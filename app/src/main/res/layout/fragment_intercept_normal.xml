@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chenji.lock.view.intercept.intercept.InterceptFragmentNormal">
+
+    <TextView
+        android:id="@+id/intercept_normal_finish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/lock_list_background"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/intercept_normal_icon"
+        android:layout_width="@dimen/item_small"
+        android:layout_height="@dimen/item_small"
+        android:layout_centerInParent="true"
+         />
+    
+    <com.chenji.lock.view.CircleTimeView
+        android:id="@+id/intercept_normal_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

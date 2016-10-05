@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+
+    <item android:drawable="@drawable/ic_launcher_i5" android:duration="150"/>
+<!--    <item android:drawable="@drawable/ic_launcher_i6" android:duration="100"/>-->
+    <item android:drawable="@drawable/ic_launcher_i7" android:duration="150"/>
+<!--    <item android:drawable="@drawable/ic_launcher_i8" android:duration="100"/>-->
+   <item android:drawable="@drawable/ic_launcher_i9" android:duration="150"/>
+    <item android:drawable="@drawable/ic_launcher_i10" android:duration="150"/>
+<!--    <item android:drawable="@drawable/ic_launcher_i11" android:duration="100"/>-->
+  <item android:drawable="@drawable/ic_launcher_i12" android:duration="150"/>
+    <item android:drawable="@drawable/ic_launcher_i13" android:duration="150"/>
+    <item android:drawable="@drawable/ic_launcher_i14" android:duration="150"/>
+    <item android:drawable="@drawable/ic_launcher_i15" android:duration="120"/>
+    <item android:drawable="@drawable/ic_launcher_i16" android:duration="100"/>
+    <item android:drawable="@drawable/ic_launcher_i17" android:duration="100"/>
+    <item android:drawable="@drawable/ic_launcher_i18" android:duration="100"/>
+    <item android:drawable="@drawable/ic_launcher_i0" android:duration="100"/>
+  <!--  <item android:drawable="@drawable/ic_launcher_i1" android:duration="100"/>-->
+    <item android:drawable="@drawable/ic_launcher_i2" android:duration="150"/>
+    <item android:drawable="@drawable/ic_launcher_i3" android:duration="150"/>
+    <!--<item android:drawable="@drawable/ic_launcher_i4" android:duration="100"/>-->
+
+</animation-list>

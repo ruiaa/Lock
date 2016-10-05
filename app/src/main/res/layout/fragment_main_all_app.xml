@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ListView
+    android:id="@+id/all_app_info_listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:divider="@color/transparency"
+    android:dividerHeight="0dp"
+    android:listSelector="@color/transparency"
+    />
+
+    <com.github.glomadrian.loadingballs.BallView
+        android:id="@android:id/progress"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        lib:balls="3"
+        lib:movement_cycle_time="800"
+        lib:enable_size_animation="true"
+        lib:size_cycle_time="400"
+        lib:min_ball_size="6dp"
+        lib:max_ball_size="24dp"
+        lib:ball_colors="@array/ball_colors"
+        lib:path="circle"
+        />
+
+
+</FrameLayout>

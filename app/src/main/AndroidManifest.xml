@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.chenji.lock"
+    android:installLocation="internalOnly"
+    android:versionCode="6"
+    android:versionName="1.2">
+
+    <uses-sdk tools:overrideLibrary="com.gc.materialdesign,com.github.glomadrian.loadingballs" />
+    <!-- 记得更改aboutFragment manifest gradle -->
+
+
+    <!-- 获取任务栈 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission xmlns:tools="http://schemas.android.com/tools"
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 接收手机启动广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 广点通 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+
+    <application
+        android:name=".Util.MyApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.EnterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Entry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.FirstActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".view.intercept.intercept.InterceptActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".view.time.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".view.count.TimeCountActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".view.intercept.choose.ChooseInterceptActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".view.setting.SettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".view.more.MoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="nosensor" />
+
+        <service
+            android:name=".controller.ControlService"
+            android:icon="@mipmap/ic_launcher"
+            android:process=":controlService" />
+
+        <provider
+            android:name=".controller.DataProvider"
+            android:authorities="com.chenji.lock.controller.DataProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":controlService" />
+
+        <receiver
+            android:name=".controller.StateReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":controlService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="mine" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56d435c967e58eca7500097c" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 广点通 -->
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+    </application>
+
+</manifest>

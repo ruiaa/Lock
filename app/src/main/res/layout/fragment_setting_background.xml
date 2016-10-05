@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.chenji.lock.view.setting.SettingFragmentBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <GridView
+        android:id="@+id/set_background_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="36dp"
+        android:verticalSpacing="24dp"
+
+        android:scrollbars="none"
+        android:divider="@color/transparency"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparency"
+
+        android:gravity="fill">
+        
+    </GridView>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="8dp">
+        <Button
+            android:id="@+id/set_background_edit"
+            android:layout_width="@dimen/item_small"
+            android:layout_height="@dimen/item_small"
+            android:background="@drawable/ic_delete"/>
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/set_background_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_big_6"
+            android:text="@string/delete"
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/text_red"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@android:id/progress"
+        android:layout_width="@dimen/item_big"
+        android:layout_height="@dimen/item_big"
+        android:layout_gravity="center"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        />
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.intercept.choose.ChooseInterceptFragmentList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <GridView
+        android:id="@+id/intercept_background_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="36dp"
+        android:verticalSpacing="24dp"
+
+        android:scrollbars="none"
+        android:divider="@color/transparency"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparency"
+
+        android:gravity="fill">
+
+    </GridView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="8dp">
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/intercept_background_edit"
+        android:layout_width="@dimen/item_small"
+        android:layout_height="@dimen/item_small"
+
+        app:animate="false"
+
+        app:rippleColor="@color/delete_button_ripple"
+        app:rippleSpeed="3"
+        app:clickAfterRipple="true"
+        />
+
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/intercept_background_edit"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/item_big_6"
+        android:text="@string/delete"
+        android:textSize="@dimen/text_big"
+        android:textColor="@color/text_red"
+
+        android:visibility="gone"/>
+</RelativeLayout>
+
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        android:id="@android:id/progress"
+        android:layout_width="@dimen/item_big"
+        android:layout_height="@dimen/item_big"
+        android:layout_gravity="center"
+        android:background="#1E88E5"
+        />
+
+</FrameLayout>

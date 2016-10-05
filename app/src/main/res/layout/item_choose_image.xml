@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chenji.lock.view.ChooseImageView
+        android:id="@+id/choose_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_gravity="right|bottom"/>
+
+    <ImageView
+        android:id="@+id/choose_image_chose"
+        android:layout_width="@dimen/item_big_2"
+        android:layout_height="@dimen/item_big_2"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="3dp"
+        android:src="@drawable/ic_selected"/>
+
+    <Button
+        android:id="@+id/choose_image_delete"
+        android:layout_width="@dimen/item_big_2"
+        android:layout_height="@dimen/item_big_2"
+        android:layout_margin="3dp"
+        android:background="@drawable/ic_delete"/>
+
+</FrameLayout>

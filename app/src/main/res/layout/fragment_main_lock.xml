@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/lock_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:background="@color/list_item_background"
+        >
+
+        <ImageView
+            android:id="@+id/lock_app_icon"
+            android:layout_width="@dimen/item_small"
+            android:layout_height="@dimen/item_small"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/lock_use_time_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lock_app_icon"
+            android:text="@string/lock_use_time_tip" />
+
+        <TextView
+            android:id="@+id/lock_use_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lock_use_time_tip" />
+
+        <ImageView
+            android:layout_width="@dimen/item_big_4"
+            android:layout_height="@dimen/item_big_2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_margin"
+            android:src="@drawable/ic_forward"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big_2"
+        android:layout_margin="@dimen/item_margin"
+        >
+
+        <com.chenji.lock.view.OverTimeView
+            android:id="@+id/lock_over_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/over_time_background"/>
+        <TextView
+            android:id="@+id/lock_over_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="24小时60分" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:id="@+id/lock_time_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@color/transparency"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparency">
+
+        </ListView>
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/lock_add"
+            android:layout_width="@dimen/item_bigx"
+            android:layout_height="@dimen/item_bigx"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="@dimen/item_big_4"
+            app:animate="true"
+            app:iconDrawable="@drawable/ic_add_white"
+            android:background="@color/add_lock_button_background"
+            app:iconSize="50dp"
+            app:rippleColor="@color/add_lock__ripple"
+            app:rippleSpeed="3"
+            app:clickAfterRipple="true"
+            />
+
+    </FrameLayout>
+
+
+</LinearLayout>

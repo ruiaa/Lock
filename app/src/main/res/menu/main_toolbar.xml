@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main_lock_use"
+            android:title="@string/lock_use_new"
+            android:icon="@drawable/lock_use"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/main_lock_forbidden"
+            android:title="@string/lock_forbidden_new"
+            android:icon="@drawable/lock_forbidden"
+            app:showAsAction="ifRoom"/>
+ <!--       <item
+            android:id="@+id/main_share"
+            android:title="@string/share"
+            android:icon="@drawable/ic_launcher"
+            app:showAsAction="ifRoom"/>-->
+
+    </group>
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/ad_entry_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_small"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"/>
+
+    <com.chenji.lock.view.GestureLockView
+        android:id="@+id/lockView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ad_entry_password"
+        />
+
+    <TextView
+        android:id="@+id/set_password_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/lockView"
+        android:gravity="center"
+        android:text="@string/password_input"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/find_password_new"
+        android:layout_width="@dimen/item_big_1"
+        android:layout_height="@dimen/item_big_1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/item_margin"
+        android:src="@drawable/find_password"/>
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:background="@color/list_item_background"
+        >
+
+        <ImageView
+            android:id="@+id/lock_app_icon"
+            android:layout_width="@dimen/item_small"
+            android:layout_height="@dimen/item_small"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/lock_use_time_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lock_app_icon"
+            android:text="@string/lock_use_time_tip" />
+
+        <TextView
+            android:id="@+id/lock_use_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lock_use_time_tip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/lock_type"
+            />
+
+        <ToggleButton
+            android:id="@+id/lock_add_type"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/unchecked"
+            android:textColor="@drawable/toggle_button_forbidden_use"
+            android:textOff="@string/lock_forbidden"
+            android:textOn="@string/lock_use" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/lock_start" />
+
+        <TextView
+            android:id="@+id/lock_add_start"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/unchecked"
+            android:gravity="center"
+            android:text=":"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/lock_finish" />
+
+        <TextView
+            android:id="@+id/lock_add_finish"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/unchecked"
+            android:gravity="center"
+            android:text=":"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_margin"
+        android:paddingTop="@dimen/item_padding"
+        android:paddingLeft="@dimen/item_padding"
+        android:paddingRight="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:id="@+id/lock_add_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/lock_add_repeat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lock_add_repeat"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/lock_add_monday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_button_true_false"
+            android:textOff="@string/monday"
+            android:textOn="@string/monday" />
+
+        <ToggleButton
+            android:id="@+id/lock_add_tuesday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_button_true_false"
+            android:textOff="@string/tuesday"
+            android:textOn="@string/tuesday" />
+
+        <ToggleButton
+            android:id="@+id/lock_add_wednesday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_button_true_false"
+            android:textOff="@string/wednesday"
+            android:textOn="@string/wednesday" />
+
+        <ToggleButton
+            android:id="@+id/lock_add_thursday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_button_true_false"
+            android:textOff="@string/thursday"
+            android:textOn="@string/thursday" />
+
+        <ToggleButton
+            android:id="@+id/lock_add_friday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_button_true_false"
+            android:textOff="@string/friday"
+            android:textOn="@string/friday" />
+
+        <ToggleButton
+            android:id="@+id/lock_add_saturday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_button_true_false"
+            android:textOff="@string/saturday"
+            android:textOn="@string/saturday" />
+
+        <ToggleButton
+            android:id="@+id/lock_add_sunday"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_button_true_false"
+            android:textOff="@string/sunday"
+            android:textOn="@string/sunday" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/lock_add_confirm"
+            android:layout_width="@dimen/item_bigx"
+            android:layout_height="@dimen/item_bigx"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/item_big_4"
+            app:animate="true"
+            app:iconDrawable="@drawable/ic_sure_white"
+            android:background="@color/add_lock_button_background"
+            app:iconSize="50dp"
+            app:rippleColor="@color/add_lock__ripple"
+            app:rippleSpeed="3"
+            app:clickAfterRipple="true"
+             />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

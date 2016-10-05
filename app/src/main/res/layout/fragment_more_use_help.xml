@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chenji.lock.view.more.MoreFragmentUseHelp"
+    android:paddingTop="4dp">
+
+
+    <ListView
+        android:id="@+id/more_use_help_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@color/transparency"
+        android:dividerHeight="4dp"
+        android:listSelector="@color/transparency"/>
+
+</FrameLayout>

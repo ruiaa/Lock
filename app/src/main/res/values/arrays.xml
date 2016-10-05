@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="set_language_all">
+        <item>@string/language_chinese</item>
+        <item>@string/language_english</item>
+        <item>@string/language_japanese</item>
+    </string-array>
+
+    <string-array name="set_update_all">
+        <item>@string/set_update_warn</item>
+        <item>@string/set_update_download</item>
+    </string-array>
+
+    <integer-array name="ball_colors">
+        <item>@color/ball_1</item>
+        <item>@color/ball_2</item>
+        <item>@color/ball_3</item>
+    </integer-array>
+
+</resources>

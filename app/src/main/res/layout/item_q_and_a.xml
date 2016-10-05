@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_margin"
+        android:background="@color/list_item_background"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q: "
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/help_q"/>
+
+            <TextView
+                android:id="@+id/item_help_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ss"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/text_black"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_margin="7dp"
+            android:background="@color/help_between" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A: "
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/help_a"/>
+
+            <TextView
+                android:id="@+id/item_help_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="a"
+                android:textColor="@color/text_gray"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

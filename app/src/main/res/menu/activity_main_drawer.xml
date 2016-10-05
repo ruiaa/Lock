@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/all_app_info"
+            android:icon="@android:drawable/ic_secure"
+            android:title="@string/all_app_info" />
+        <item
+            android:id="@+id/app_use_count"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="@string/app_use_count" />
+        <item
+            android:id="@+id/choose_intercept"
+            android:icon="@android:drawable/ic_menu_close_clear_cancel"
+            android:title="@string/choose_intercept" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/setting" />
+        <item
+            android:id="@+id/more"
+            android:icon="@android:drawable/ic_menu_more"
+            android:title="@string/more" />
+
+
+</menu>

@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">时间锁</string>
+
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="finish">完成</string>
+    <string name="edit">编辑</string>
+    <string name="share">分享</string>
+    <string name="crash">已崩溃</string>
+
+    <!--侧滑菜单栏 -->
+    <string name="all_app_info">时间锁</string>
+    <string name="app_use_count">使用统计</string>
+    <string name="choose_intercept">拦截</string>
+    <string name="setting">设置</string>
+    <string name="more">更多</string>
+
+
+    <!--设置-->
+    <string name="set_background">背景设置</string>
+    <string name="toast_cannot_delete_background_within">不能删除应用自带背景</string>
+    <string name="toast_long_click_for_delete">长按删除背景</string>
+
+    <string name="set_password">密码重置</string>
+    <string name="password_input">请输入密码</string>
+    <string name="password_wrong">密码错误</string>
+    <string name="password_old">请输入旧密码</string>
+    <string name="set_password_new">请输入新密码</string>
+    <string name="set_password_again">请再次输入密码</string>
+    <string name="set_password_again_wrong">两次密码不一致,请重新输入新密码</string>
+    <string name="set_password_again_right">密码设置成功</string>
+    <string name="set_password_question">请设置密保问题 (用于找回密码)</string>
+    <string name="input_password_question">请输入密保问题</string>
+    <string name="input_password_answer">请输入密保答案</string>
+    <string name="password_question"> 密保问题: </string>
+    <string name="password_answer"> 密保答案: </string>
+    <string name="password_answer_wrong">密保答案错误</string>
+    <string name="password_find">密码找回</string>
+    <string name="password_show">您的密码是:</string>
+
+
+    <string name="lock_after_exit">退出自毁</string>
+    <string name="lock_after_exit_tip">时间锁离开屏幕时销毁前台活动,释放内存</string>
+
+    <string name="boot_completed">开机自启</string>
+    <string name="boot_completed_tip">手机重启后自动打开后台服务</string>
+
+    <string name="set_update">更新设置</string>
+    <string name="set_update_warn">有更新时提醒</string>
+    <string name="set_update_download">连接wifi时自动下载更新包</string>
+
+    <string name="set_language">语言设置</string>
+    <string name="language_chinese">中文</string>
+    <string name="language_english">英语</string>
+    <string name="language_japanese">日语</string>
+
+    <!--更多-->
+    <string name="use_help">使用帮助</string>
+    <string name="feedback">用户反馈</string>
+    <string name="about_me">关于时间锁</string>
+    <string name="check_update">检查更新</string>
+
+    <!--拦截-->
+    <string name="return_desk">返回桌面</string>
+    <string name="intercept_mode">拦截模式</string>
+    <string name="intercept_mode_warn">提醒模式</string>
+    <string name="intercept_interval">拦截间隔</string>
+    <string name="intercept_mode_force">强制模式</string>
+    <string name="intercept_background">拦截背景</string>
+    <string name="judge_interval">拦截精度</string>
+    <string name="intercept_show_time">显示图标</string>
+    <string name="open_lock_true">锁已开启</string>
+    <string name="open_lock_false">锁未开启</string>
+
+    <!--锁-->
+    <string name="lock_use_time_tip">今天已使用时间:</string>
+    <string name="lock_start">开始时间</string>
+    <string name="lock_finish">结束时间</string>
+    <string name="lock_use">锁定</string>
+    <string name="lock_forbidden">禁用</string>
+    <string name="lock_use_new">当前锁定</string>
+    <string name="lock_forbidden_new">当前禁用</string>
+    <string name="lock_type">时间锁类型</string>
+    <string name="lock_add_repeat">重复星期</string>
+    <string name="confirm">确定</string>
+    <string name="lock_use_time">时间限定</string>
+
+    <!--星期-->
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+    <string name="week">星期</string>
+
+    <string name="monday_week">周一</string>
+    <string name="tuesday_week">周二</string>
+    <string name="wednesday_week">周三</string>
+    <string name="thursday_week">周四</string>
+    <string name="friday_week">周五</string>
+    <string name="saturday_week">周六</string>
+    <string name="sunday_week">周日</string>
+
+    <string name="minute">分钟</string>
+    <string name="hour">小时</string>
+    <string name="second">秒</string>
+
+    <string name="left">余:</string>
+    <string name="time_over">时间使用配额</string>
+    <string name="time_over_over">已用光时间配额</string>
+
+    <string name="toast_no_choose_start_time">请选择开始时间</string>
+    <string name="toast_no_choose_finish_time">请选择结束时间</string>
+    <string name="toast_finishAfterStart">请选择结束时间大于开始时间</string>
+    <string name="toast_key_back">再按一次退出</string>
+    <string name="toast_password_true">密码正确</string>
+    <string name="toast_password_false">密码错误</string>
+    <string name="toast_cannot_lock_itself">不能对自身加锁</string>
+
+
+    <!--question和answer-->
+    <string name="question_lock">怎样对app加锁?</string>
+    <string name="answer_lock">在时间锁界面点击相应app图标,将显示该app所拥有的锁,再点击右下角加号图标进入加锁界面</string>
+
+    <string name="question_lock_use">锁定锁有什么作用?</string>
+    <string name="answer_lock_use">在锁定的时间段内,如果手机上使用的app不是该锁锁定的app,将会弹出拦截界面</string>
+
+    <string name="question_lock_forbidden">禁用锁有什么作用?</string>
+    <string name="answer_lock_forbidden">在禁用的时间段内,如果手机上使用的app就是该锁禁用的app,将会弹出拦截界面</string>
+
+    <string name="question_lock_over">时间使用配额是什么?</string>
+    <string name="answer_lock_over">时间使用配额是指一天中最多能使用该app的时间</string>
+
+    <string name="question_judge_interval">拦截精度是用来干啥的?</string>
+    <string name="answer_judge_interval">拦截精度表示多少秒判断一次什么app正处在手机屏幕上,精度越细，拦截响应越快越准</string>
+
+    <string name="question_no_date">为什么时间统计里有些日期没被记录?</string>
+    <string name="answer_no_date">时间锁需要在后台运行才能进行拦截app和统计app使用时间,当它被手机卫士,手机管家之类的app杀掉后,将不能正常运行,所以,请尽量把它加进白名单</string>
+
+
+    <string name="no_permission">权限不够\n请打开手机设置，点击安全-高级，在有权查看使用情况的应用中，为时间锁打上勾</string>
+    <string name="get_permission">现在就去</string>
+
+
+    <!--activity标签-->
+    <string name="title_activity_enter">EnterActivity</string>
+    <string name="title_activity_first">FirstActivity</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_lock">LockActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        <  <android.support.design.widget.AppBarLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/toolbar_background"
+              android:elevation="0dp"
+              android:theme="@style/AppTheme.AppBarOverlay"
+              >
+
+              <com.andexert.library.RippleView
+                  rv_centered="true"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+      <android.support.v7.widget.Toolbar
+           android:id="@+id/common_toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="64dp"
+           android:background="@color/toolbar_background"
+           app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+         </com.andexert.library.RippleView>
+
+     </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    </android.support.design.widget.CoordinatorLayout>-->
+
+    <com.andexert.library.RippleView
+        rv_centered="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/common_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:fitsSystemWindows="true"
+            />
+    </com.andexert.library.RippleView>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/common_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <FrameLayout
+            android:id="@+id/common_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fragment_background"
+            android:paddingLeft="@dimen/fragment_left_margin"
+            android:paddingRight="@dimen/fragment_right_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/common_nav_view"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/navigation_background"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

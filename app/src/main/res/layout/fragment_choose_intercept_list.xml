@@ -1,0 +1,159 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/intercept_mode"
+            />
+
+        <ToggleButton
+            android:id="@+id/choose_intercept_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textOff="@string/intercept_mode_force"
+            android:textOn="@string/intercept_mode_warn"
+            android:textColor="@drawable/toggle_button_force_warn"
+            android:background="@color/transparency"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose_intercept_interval"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:id="@+id/choose_intercept_interval_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/intercept_interval"/>
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300秒"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <SeekBar
+            android:id="@+id/choose_intercept_interval_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/choose_intercept_interval_text"
+            android:layout_toLeftOf="@android:id/text1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose_intercept_judge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:id="@+id/choose_intercept_judge_interval_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/judge_interval"
+            />
+
+        <TextView
+            android:id="@android:id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.1秒"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <SeekBar
+            android:id="@+id/choose_intercept_judge_interval_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/choose_intercept_judge_interval_text"
+            android:layout_toLeftOf="@android:id/text2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose_intercept_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/intercept_background"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/item_big_4"
+            android:layout_height="@dimen/item_big_2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_forward"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/intercept_show_time"
+            />
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/choose_intercept_show_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textOn="on"
+            android:textOff="off"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

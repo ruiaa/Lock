@@ -1,0 +1,79 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!--状态栏底色-->
+        <item name="colorPrimaryDark">@color/state_window_top</item>
+        <!--导航字体颜色-->
+        <item name="android:textColorPrimary">@color/text_black</item>
+        <!--toolbar颜色-->
+        <item name="colorPrimary">@color/toolbar_background</item>
+        <!--主视窗底色-->
+        <item name="android:windowBackground">@color/transparency</item>
+        <!--导航栏底色  API v21 values-v21
+        <item name="android:navigationBarColor"></item>
+        -->
+
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_middle</item>
+
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="Entry" parent="AppTheme.Base">
+        <!--主视窗底色-->
+        <item name="android:windowBackground">@color/entry_background</item>
+    </style>
+
+    <style name="lock_list_dialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@color/transparency</item>
+        <!--        <item name="android:backgroundDimEnabled">false</item>&lt;!&ndash; 模糊 &ndash;&gt;-->
+    </style>
+
+
+    <style name="dialog_null" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- <item name="android:windowBackground">@drawable/lock_list_background</item>-->
+        <!--        <item name="android:backgroundDimEnabled">false</item>&lt;!&ndash; 模糊 &ndash;&gt;-->
+    </style>
+
+
+    <style name="text_item_black">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_middle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

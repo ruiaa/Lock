@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.andexert.library.RippleView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    rv_centered="true"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/navigation_header">
+
+    <ImageView
+        android:id="@+id/nav_imageView_hourglass"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/item_small"
+        android:background="@anim/hourglass" />
+
+    <TextView
+        android:id="@+id/nav_imageView_open_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:layout_marginRight="@dimen/item_big_4" />
+
+</com.andexert.library.RippleView>

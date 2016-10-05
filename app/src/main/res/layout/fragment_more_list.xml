@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chenji.lock.view.setting.MoreFragmentList"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/more_use_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/use_help"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/item_big_4"
+            android:layout_height="@dimen/item_big_2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_forward"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/feedback"/>
+
+        <ImageView
+            android:layout_width="@dimen/item_big_4"
+            android:layout_height="@dimen/item_big_2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_forward"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_about_me"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/about_me"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/item_big_4"
+            android:layout_height="@dimen/item_big_2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_forward"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_check_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_big"
+        android:layout_margin="@dimen/item_margin"
+        android:padding="@dimen/item_padding"
+        android:background="@color/list_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/check_update"
+            />
+
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            android:id="@+id/progressBarCircularIndeterminate"
+            android:layout_width="@dimen/item_big_2"
+            android:layout_height="@dimen/item_big_2"
+            android:layout_centerInParent="true"
+            android:background="#1E88E5"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
